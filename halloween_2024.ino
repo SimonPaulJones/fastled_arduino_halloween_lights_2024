@@ -17,7 +17,7 @@ LEDState states[] = {
   {CRGB(240, 255, 0), 1000, 4000}, // Bright orange
   {CRGB(30, 50, 0), 600, 800},  // Mid brightness orange
 //  {CRGB(10, 20, 0), 600, 1000},  // Low brightness orange
-  {CRGB::Black, 100, 500}        // Off
+  {CRGB::Black, 50, 100}        // Off
 };
 
 // Define weights for each state
@@ -29,8 +29,8 @@ void setup() {
 
 void loop() {
 
-  int number_of_yellow_on_off_changes_before_heartbeat = 30;
-  int number_of_heartbeats = 10;
+  int number_of_yellow_on_off_changes_before_heartbeat = 20;
+  int number_of_heartbeats = 15;
 
   for (int k = 0; k < number_of_yellow_on_off_changes_before_heartbeat; k++) {
     int totalWeight = 0;
